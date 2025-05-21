@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="plan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+  </head>
+  <body>
+    <header>
+      <div class="navbar1">
+        <div class="header-data">
+          <span><a href="/home-page/index.html">NETFLIX</a> </span>
+          <span class="signin-btn"
+            ><a href="/signin-page/signin.html">Sign Out</a></span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="regcontainter">
+      <div class="reg-data">
+        <div class="img"></div>
+        <i class="fa-regular fa-circle-check"></i>
+        <span>STEP <b>2</b> OF <b>3</b></span>
+        <h1>Choose your plan.</h1>
+        <div class="reg-bottom">
+          <i class="fa-solid fa-check-double"></i>
+          <p>
+            No commitments, cancel <br />
+            anytime.
+          </p>
+        </div>
+        <div class="reg-bottom">
+          <i class="fa-solid fa-check-double"></i>
+          <p>Everything on Netflix for one <br />low price.</p>
+        </div>
+        <div class="reg-bottom">
+          <i class="fa-solid fa-check-double"></i>
+          <p>No ads and no extra fees. Ever.</p>
+        </div>
+        <!-- <div class="input-box">
+                <input type="text" placeholder="Email"> <br>
+                <input type="password" placeholder="Add a Password">
+            </div> -->
+            <button class="button" onclick="window.location.href='/platform/platform.html';">Next</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-data">
+        <p>Questions? Call 000-800-919-1694</p>
+      </div>
+
+      <span class="foot">Faqs</span>
+      <span class="foot1">Help Centre</span>
+      <span class="foot2">Term Of Use</span>
+      <span class="foot3">Privicy</span>
+      <span class="foot4">Cookie Preferences</span>
+      <span class="foot5">Corporate Information</span>
+
+      <select class="lang">
+        <option value="English">
+          <i class="fa-sharp fa-regular fa-globe"></i>English
+        </option>
+        <option value="Hindi">
+          <i class="fa-sharp fa-regular fa-globe"></i>Hindi
+        </option>
+      </select>
+    </div>
+    <script src="/function/function.js"></script>
+    <script src="../All_JS_File/check_user_auth_redir_login_page.js"></script>
+  </body>
+</html>
